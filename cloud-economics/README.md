@@ -32,9 +32,9 @@ In enterprise cloud environments, choosing the right instance type is important 
 - Cost optimization thinking
 
 ## Evidence
-This lab was completed successfully in a guided AWS SimuLearn environment.  
-The original temporary lab environment is no longer active, so live screenshots from the instance are not available.  
-A completion certificate is included as proof of completion.
+- Completion certificate included as proof of successful completion
+- Architecture screenshot included for visual context
+- Lab screenshot included to show the pricing and rightsizing task
 
 ## Status
 Completed guided lab
