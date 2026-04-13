@@ -50,8 +50,8 @@ The completion certificate confirms successful completion of **AWS SimuLearn: Cl
 
 ## Files Included
 - `certificate.pdf`
-- `architecture-overview.png`
-- `rightsizing-task.png`
+- `project-overview.png`
+- `verification-task.png`
 
 ## Status
 Completed guided lab
