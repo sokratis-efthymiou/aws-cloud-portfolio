@@ -1,51 +1,68 @@
 # AWS SimuLearn: Networking Concepts
 
 ## Overview
-This guided AWS lab focused on networking and secure communication between application components inside an AWS Virtual Private Cloud (VPC). The exercise demonstrated how security group rules control traffic between resources in different subnets.
+This guided AWS lab focused on networking and secure communication between application components inside an AWS Virtual Private Cloud (VPC). The exercise demonstrated how routing, subnet separation, and security group rules are used to control traffic between cloud resources.
 
 ## Objective
-To configure secure connectivity between a web server and a database server by updating the appropriate security group rules.
+To understand the core components of a VPC and configure secure communication between a web server and a database server by updating the appropriate security group rules.
+
+## Lab Context
+The practice lab focused on:
+- exploring the components that comprise a Virtual Private Cloud (VPC)
+- configuring a route table attached to a subnet within a VPC
+- configuring an internet gateway inside a VPC
+- configuring inbound rules within a security group to control access
 
 ## Tasks Performed
 - Reviewed the VPC network layout
 - Identified the web server in the **public subnet**
 - Identified the database server in the **private subnet**
-- Modified security group rules to allow traffic on **port 3306**
+- Reviewed the connectivity path from the internet to the VPC through the internet gateway and router
+- Updated the security group rules to allow traffic on **port 3306**
 - Validated successful communication between the web server and the database server
 
 ## AWS Services and Concepts Involved
 - Amazon VPC
 - Public subnet
 - Private subnet
+- Route tables
+- Internet gateway
 - Security groups
 - TCP port 3306
 - Web-to-database connectivity
-- Basic routing and network segmentation concepts
 
 ## What I Learned
-- How VPCs separate resources into network segments
+- How core VPC components work together in a cloud network
 - The difference between public and private subnets
-- How security groups control inbound traffic between cloud resources
+- How route tables and internet gateways support traffic flow
+- How security groups control inbound connectivity between AWS resources
 - Why databases should be protected in private network layers
 - How application-to-database communication is configured securely in AWS
 
 ## Business Relevance
-A common enterprise cloud design pattern is to keep the application layer accessible while protecting the database layer from direct external exposure. This lab reflects that model by allowing controlled internal communication between the web server and the database server, while keeping the backend more secure.
+A common enterprise cloud design pattern is to keep the application layer accessible while protecting the database layer from direct external exposure. This lab reflects that model by allowing controlled internal communication between the web server and the database server, while keeping the backend more secure through subnet separation and rule-based access.
 
 ## Skills Demonstrated
 - Basic VPC architecture understanding
-- Security group configuration
 - Subnet separation awareness
+- Route table and gateway understanding
+- Security group configuration
 - Controlled database connectivity
 - Secure cloud design thinking
 
 ## Evidence
-This lab was completed successfully in a guided AWS SimuLearn environment.  
-The original temporary lab environment is no longer active, so live instance screenshots are not available.  
-A completion certificate is included as proof of completion.
+This project includes supporting evidence for clarity and traceability:
+- Completion certificate
+- Architecture / concept screenshot
+- Lab screenshot showing the security group validation task
+
+## Files Included
+- `certificate.pdf`
+- `project-overview.png`
+- `verification-task.png`
 
 ## Status
 Completed guided lab
 
 ## Next Step
-Recreate a similar VPC setup independently and document the architecture with a custom diagram and live configuration screenshots.
+Recreate a similar VPC setup independently and document the architecture with a custom diagram and live configuration screenshots from a self-built environment.
